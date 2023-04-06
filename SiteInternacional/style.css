@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c91414;
+}
+
+ul {
+
+    list-style: none;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none ;
+    color: #dddddd;
+
+}
+
+
+p{
+    color: #961c1c;
+}
+
+p1{
+    text-align: left;
+    color: #f3ebeb;
+    font-size: 2rem;
+    display: flex;
+}
+
+
+
+h1  {
+    color: #f5f5f5;
+    font-size: 2rem;
+}
+
+h3{
+    color: #961c1c;
+}
+
+h4{
+    color: #961c1c;
+}
+
+
+
+header{
+    background:no-repeat center/cover url('inter.jpg');
+    height: calc(120vh - 150px);
+}
+
+h2{
+    font-size: 2rem;
+    text-align: left;
+    color: #fdfdfd;
+    font-weight:auto;
+    
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 90px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin: 15px;
+}
+
+.header-content{
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1{
+    margin-bottom: 10px;
+    font-size: 4rem;
+}
+
+.jogadores {
+    background: #961c1c;
+    padding: 15px;
+}
+
+.jogadores .jogadores-cards {
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.jogadores .jogadores-title {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.jogadores .card {
+    width: 250px;
+    height: 500px;
+    background: white;
+    border-radius: 24px;
+    margin: 10px;
+    position: relative;
+}
+
+.jogadores .card-image {
+    width: 250px;
+    height: 225px;
+    border-radius: 24px;
+    object-fit: cover;
+}
+
+.jogadores .card-content {
+    padding: 0 15px;
+}
+
+.jogadores .card-content ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.jogadores .card-content ul li{
+    font-size: 0.8rem;
+    display: flex;
+    margin: rgb(218, 62, 62);
+    font-weight: bold;
+}
+
+.jogadores .card-content li svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+.jogadores .card .card-tag p{
+    margin: 0;
+    font-size: 0.8rem;
+    color: #ece1dc;
+    font-weight: bold;
+}
+
+.historia{
+    padding: 15px;
+    color:#961c1c;
+}
+
+.historia .historia-title{
+    text-align: center;
+    margin: 35px 0;
+}
+
+.historia .historia-cards{
+    margin-top: 25px;
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.historia .card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.historia .card svg{
+    width: 60px;
+    height: 60px;
+    margin: 50px;
+    transition: all 1s;
+}
+
+
