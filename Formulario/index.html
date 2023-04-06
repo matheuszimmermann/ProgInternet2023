@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario IFPR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="py-5">
+    <div class="container px-4 formBody">
+       
+        <div class="text-center" id="img-topo">
+            <img src="data:image/png;base64,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" 
+            class="img-fluid mt-2 mb-3"alt="IFPR" width="200px">
+        </div>
+        <p class="paragraph">
+            1 - Qual o seu nome ? </p>
+        <div class="input-group-text mb-3">
+            <span class="input-group-text">Primeiro nome:</span>
+            <input type="text" class="form-control" placeholder="Digite aqui">
+        </div>
+        <div class="input-group-text mb-3">
+            <span class="input-group-text">Segundo nome:</span>
+            <input type="text" class="form-control" placeholder="Digite aqui">
+        </div>
+        <p>2 - Qual o seu gênero ?</p>
+        <div>
+            <input type="radio" name="flexRadioDefalt" id="flexRadioDefalt" >
+            <label for="flexRadioDefalt1">
+                Homem
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="flexRadioDefalt" id="flexRadioDefalt" >
+            <label for="flexRadioDefalt2">
+                Mulher
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="flexRadioDefalt" id="flexRadioDefalt" >
+            <label for="flexRadioDefalt3">
+                Prefiro não informar
+            </label>
+        </div>
+        <p class="paragraph mt-3">3 - Marquem  os treinamentos que você fez :</p>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" >
+            <label class="form-check-label">JavaSript</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" >
+            <label class="form-check-label">Java</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" >
+            <label class="form-check-label">Python</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" >
+            <label class="form-check-label">MySQL</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" >
+            <label class="form-check-label">UML</label>
+        </div>
+        <p class="paragraph mt-3">
+            4 - Quais são suas qualidades 
+        </p>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="option1">
+            <label class="form-check-label" >Proativo</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="option1">
+            <label class="form-check-label" >Frango</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="option1">
+            <label class="form-check-label" >Barbuleta</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="option1">
+            <label class="form-check-label" >Tanque de Guerra</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="option1">
+            <label class="form-check-label" >Vivo</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" value="option1">
+            <label class="form-check-label" >Maquina de combate</label>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-outline-primary">Enviar</button>
+        </div>
+    </div >
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://a.cdn-hotels.com/gdcs/production44/d941/9e8ea129-e035-43e1-9b6c-b721bcfc0bca.jpg?impolicy=fcrop&w=800&h=533&q=medium" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://f.i.uol.com.br/fotografia/2023/01/11/167345304663beddf6378a4_1673453046_3x2_rt.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.cadaminuto.com.br/cadaminuto/imagens/1288204092lata.jpg/:/rs=w:800,h:500,i:true,cg:true,ft:cover?cache=true" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <div class="conteiner text-center footer">
+        <p> Desenvolvido Por Matheus Zimmermann&copy; Todos os direitos Reservados - 2023</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
