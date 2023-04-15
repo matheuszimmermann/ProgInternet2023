@@ -5,43 +5,20 @@ const listEl = document.getElementById("list");
 const searchField = document.getElementById("searchField");
 searchField.addEventListener("input", inputHandler)
 
-
-
 this.fillList();
 
-
-
 function adicionar() {
- 
     var searchField = document.getElementById("searchField");
     var nome = searchField.value; 
     nameList.push(nome);
 
-    for(var i = 0; i < nameList.length; i++ ){
-        lista += (i + 1) + "." + nameList[i] + "\n";
-    }
-    
+    fillList();
+
     searchField.value = "";
     searchField.focus();
 }
 var btAdicionar = document.getElementById("btAdicionar");
 btAdicionar.addEventListener("click", adicionar);
-
-
-function remover(){
- 
-    var searchField = document.getElementById("searchField");
-    var nameList = searchField.value; 
-
-    for(var i = 0; i < nameList.length; i++ ){
-        lista = (i - nameList) + nameList[i];
-    }
-    
-    searchField.value = "";
-}
-var btRemover = document.getElementById("btRemover");
-btRemover.addEventListener("click", remover);
-
 
 
 function fillList(list = nameList) {
@@ -52,7 +29,6 @@ function fillList(list = nameList) {
        listEl.appendChild(listItems);
    }
 }
-
 
 
 function inputHandler() {
